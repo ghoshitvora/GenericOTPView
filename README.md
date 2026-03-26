@@ -96,28 +96,6 @@ OTPField(
     isSecure: true
 )
 ```
-
-**API**
-
-```swift
-init(
-    otp: Binding<String>,
-    length: Int,
-    style: OTPFieldStyle = .underline,
-    cornerRadius: CGFloat = 8,
-    spacing: CGFloat = 12,
-    lineWidth: CGFloat = 2,
-    activeColor: Color = .blue,
-    inactiveColor: Color = .gray.opacity(0.4),
-    filledColor: Color = .blue.opacity(0.15),
-    boxBackgroundColor: Color = .clear,
-    isHighlightEnabled: Bool = true,
-    isHighlightBackgroundEnabled: Bool = false,
-    isSecure: Bool = false,
-    onComplete: ((String) -> Void)? = nil
-)
-```
-
 **Parameter Notes**
 - `length` supports only 4 or 6 digits. Other values will be clamped to 4.
 - `isHighlightEnabled` affects underline and box border colors for filled digits.
@@ -132,3 +110,7 @@ init(
 **Project Files**
 - OTP view: `GenericOTPView/GenericOTPView/Source/OTPField.swift`
 - Demo usage: `GenericOTPView/GenericOTPView/ContentView.swift`
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
