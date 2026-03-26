@@ -11,6 +11,7 @@
 		738A33142F75463900A8D09A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A330F2F75463900A8D09A /* ContentView.swift */; };
 		738A33152F75463900A8D09A /* GenericOTPViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A33102F75463900A8D09A /* GenericOTPViewApp.swift */; };
 		738A33162F75463900A8D09A /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A33112F75463900A8D09A /* OTPField.swift */; };
+		73FCD1822F754E5B00A7AA9F /* ContentView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		738A330F2F75463900A8D09A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		738A33102F75463900A8D09A /* GenericOTPViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOTPViewApp.swift; sourceTree = "<group>"; };
 		738A33112F75463900A8D09A /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
+		73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				738A330F2F75463900A8D09A /* ContentView.swift */,
 				738A33102F75463900A8D09A /* GenericOTPViewApp.swift */,
 				73FCD1802F75498D00A7AA9F /* Source */,
+				73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */,
 			);
 			path = GenericOTPView;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FCD1822F754E5B00A7AA9F /* ContentView+Helpers.swift in Sources */,
 				738A33142F75463900A8D09A /* ContentView.swift in Sources */,
 				738A33152F75463900A8D09A /* GenericOTPViewApp.swift in Sources */,
 				738A33162F75463900A8D09A /* OTPField.swift in Sources */,
