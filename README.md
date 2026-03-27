@@ -2,6 +2,8 @@
 
 A SwiftUI OTP input component with underline and box styles, optional highlighting, secure entry, and completion callbacks.
 
+![OTP Demo](GenericOTPView/GenericOTPView/Resources/GIf/otp.gif)
+
 **Features**
 - 4 or 6 digit OTP input
 - Underline or box style
@@ -113,4 +115,3 @@ OTPField(
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-

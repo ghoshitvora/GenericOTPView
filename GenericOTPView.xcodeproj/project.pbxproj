@@ -12,6 +12,7 @@
 		738A33152F75463900A8D09A /* GenericOTPViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A33102F75463900A8D09A /* GenericOTPViewApp.swift */; };
 		738A33162F75463900A8D09A /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738A33112F75463900A8D09A /* OTPField.swift */; };
 		73FCD1822F754E5B00A7AA9F /* ContentView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */; };
+		73FCD1892F7648B100A7AA9F /* otp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 73FCD1882F7648B100A7AA9F /* otp.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		738A33102F75463900A8D09A /* GenericOTPViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericOTPViewApp.swift; sourceTree = "<group>"; };
 		738A33112F75463900A8D09A /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
 		73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Helpers.swift"; sourceTree = "<group>"; };
+		73FCD1882F7648B100A7AA9F /* otp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = otp.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +55,10 @@
 		738A33122F75463900A8D09A /* GenericOTPView */ = {
 			isa = PBXGroup;
 			children = (
-				738A330E2F75463900A8D09A /* Assets.xcassets */,
-				738A330F2F75463900A8D09A /* ContentView.swift */,
-				738A33102F75463900A8D09A /* GenericOTPViewApp.swift */,
+				73FCD1852F76488300A7AA9F /* App */,
 				73FCD1802F75498D00A7AA9F /* Source */,
-				73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */,
+				73FCD1842F76486F00A7AA9F /* OTPView */,
+				73FCD1832F76483700A7AA9F /* Resources */,
 			);
 			path = GenericOTPView;
 			sourceTree = "<group>";
@@ -68,6 +69,48 @@
 				738A33112F75463900A8D09A /* OTPField.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		73FCD1832F76483700A7AA9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73FCD1872F76489C00A7AA9F /* GIf */,
+				73FCD1862F76488F00A7AA9F /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73FCD1842F76486F00A7AA9F /* OTPView */ = {
+			isa = PBXGroup;
+			children = (
+				738A330F2F75463900A8D09A /* ContentView.swift */,
+				73FCD1812F754E5B00A7AA9F /* ContentView+Helpers.swift */,
+			);
+			path = OTPView;
+			sourceTree = "<group>";
+		};
+		73FCD1852F76488300A7AA9F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				738A33102F75463900A8D09A /* GenericOTPViewApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		73FCD1862F76488F00A7AA9F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				738A330E2F75463900A8D09A /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		73FCD1872F76489C00A7AA9F /* GIf */ = {
+			isa = PBXGroup;
+			children = (
+				73FCD1882F7648B100A7AA9F /* otp.gif */,
+			);
+			path = GIf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FCD1892F7648B100A7AA9F /* otp.gif in Resources */,
 				738A33132F75463900A8D09A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
