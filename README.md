@@ -110,7 +110,7 @@ OTPField(
 - The keyboard is dismissed when the OTP is complete.
 
 ## Preview
-![Demo](Resources/Gif/otp.gif)
+![Demo](GenericOTPView/Resources/Gif/otp.gif)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
