@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Holds the 4-digit OTP for the basic underline style.
     @State private var otp4: String = ""
+    // Holds the 4-digit OTP for the underline style with highlight enabled.
     @State private var otp4Alt: String = ""
+    // Holds the 4-digit OTP for the box style without background or highlight.
     @State private var otp4Box: String = ""
+    // Holds the 6-digit OTP for the box style with a subtle background.
     @State private var otp6Box: String = ""
+    // Holds the 6-digit OTP for the box style with highlight and filled background.
     @State private var otp6Highlight: String = ""
+    // Holds the 6-digit OTP for the secure (masked) box style.
     @State private var otp6Secure: String = ""
 
     var body: some View {
@@ -26,8 +32,8 @@ struct ContentView: View {
                         OTPField(
                             otp: $otp4,
                             length: 4,
-                            style: .underline,
-                            isHighlightEnabled: false
+                            style: .underline, // Draws an underline for each digit.
+                            isHighlightEnabled: false // Disables active-color highlight for filled digits.
                         )
                     }
 
@@ -35,8 +41,8 @@ struct ContentView: View {
                         OTPField(
                             otp: $otp4Alt,
                             length: 4,
-                            style: .underline,
-                            isHighlightEnabled: true
+                            style: .underline, // Underline style.
+                            isHighlightEnabled: true // Highlights filled digits with activeColor.
                         )
                     }
 
@@ -45,9 +51,9 @@ struct ContentView: View {
                             otp: $otp4Box,
                             length: 4,
                             style: .box,
-                            cornerRadius: 8,
-                            boxBackgroundColor: .clear,
-                            isHighlightEnabled: false
+                            cornerRadius: 8, // Rounds the box corners.
+                            boxBackgroundColor: .clear, // Removes box fill.
+                            isHighlightEnabled: false // Keeps border in inactiveColor.
                         )
                     }
 
@@ -57,7 +63,7 @@ struct ContentView: View {
                             length: 6,
                             style: .box,
                             cornerRadius: 14,
-                            boxBackgroundColor: Color.blue.opacity(0.08),
+                            boxBackgroundColor: Color.blue.opacity(0.08), // Subtle box fill.
                             isHighlightEnabled: false
                         )
                     }
@@ -68,10 +74,10 @@ struct ContentView: View {
                             length: 6,
                             style: .box,
                             cornerRadius: 14,
-                            filledColor: Color.blue.opacity(0.18),
-                            boxBackgroundColor: Color.blue.opacity(0.06),
-                            isHighlightEnabled: true,
-                            isHighlightBackgroundEnabled: true
+                            filledColor: Color.blue.opacity(0.18), // Fill for completed digits.
+                            boxBackgroundColor: Color.blue.opacity(0.06), // Base box fill.
+                            isHighlightEnabled: true, // Active-color border for filled digits.
+                            isHighlightBackgroundEnabled: true // Uses filledColor for completed digits.
                         )
                     }
 
@@ -83,7 +89,7 @@ struct ContentView: View {
                             cornerRadius: 8,
                             boxBackgroundColor: .clear,
                             isHighlightEnabled: false,
-                            isSecure: true
+                            isSecure: true // Masks each digit with a bullet.
                         )
                     }
                 }

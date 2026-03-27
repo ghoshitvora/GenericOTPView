@@ -1,10 +1,12 @@
 import SwiftUI
 
+/// Visual presentation for the OTP digits.
 enum OTPFieldStyle {
     case underline
     case box
 }
 
+/// A SwiftUI OTP input view that supports 4 or 6 digits with underline or box styling.
 struct OTPField: View {
     @Binding private var otp: String
 
@@ -26,6 +28,22 @@ struct OTPField: View {
     @State private var lastCompletedOtp: String = ""
     @FocusState private var isFocused: Bool
 
+    /// Creates an OTP field.
+    /// - Parameters:
+    ///   - otp: Binding to the OTP string. Only numeric input is kept.
+    ///   - length: Number of digits (supports 4 or 6).
+    ///   - style: Visual style for each digit (`.underline` or `.box`).
+    ///   - cornerRadius: Corner radius for `.box` style.
+    ///   - spacing: Horizontal spacing between digits.
+    ///   - lineWidth: Line width for underline or box stroke.
+    ///   - activeColor: Color used for the active digit highlight.
+    ///   - inactiveColor: Color for inactive underline/border.
+    ///   - filledColor: Fill color for completed digits when highlight background is enabled.
+    ///   - boxBackgroundColor: Base background color for boxes.
+    ///   - isHighlightEnabled: When `true`, completed digits use `activeColor` for the underline or box border.
+    ///   - isHighlightBackgroundEnabled: When `true`, completed digits use `filledColor` as the box background.
+    ///   - isSecure: Masks digits with a bullet character.
+    ///   - onComplete: Called once per unique completed OTP.
     init(
         otp: Binding<String>,
         length: Int,
