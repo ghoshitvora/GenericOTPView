@@ -109,9 +109,8 @@ OTPField(
 - Numeric-only input is enforced.
 - The keyboard is dismissed when the OTP is complete.
 
-**Project Files**
-- OTP view: `GenericOTPView/GenericOTPView/Source/OTPField.swift`
-- Demo usage: `GenericOTPView/GenericOTPView/ContentView.swift`
+## Preview
+![Demo](Resources/Gif/otp.gif)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
